@@ -859,7 +859,7 @@
                 
                 
                 <h1 id="github-ssh">github SSH免密码登录<a class="headerlink" href="#github-ssh" title="Permanent link">&para;</a></h1>
-<p><img alt="🌏" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f30f.svg" title=":earth_asia:" /> <strong>Bilibili视频传送门：</strong><a href="https://www.bilibili.com/video/BV1NL411x7z9?share_source=copy_web">github SSH免密码登录</a> <img alt="🌏" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f30f.svg" title=":earth_asia:" /></p>
+<p><img alt="🌏" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f30f.svg" title=":earth_asia:" /> <strong>Bilibili视频传送门：</strong><a href="https://www.bilibili.com/video/BV1NL411x7z9?share_source=copy_web">github SSH免密码登录</a> <img alt="🌏" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f30f.svg" title=":earth_asia:" /></p>
 <h2 id="ssh">什么是SSH<a class="headerlink" href="#ssh" title="Permanent link">&para;</a></h2>
 <p><img alt="SSH" src="image/1633607611414.png" /></p>
 <p>如上图，在github仓库的Code栏，可以查看到SSH标签。</p>
@@ -880,8 +880,7 @@
 </ul>
 <h3 id="_1">本地生成密钥对<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <p>win+R打开控制台，使用命令：</p>
-<div class="highlight"><pre><span></span><code>ssh-keygen -t rsa -b 4096 -C &quot;最好为github的账号&quot;
-</code></pre></div>
+<p><code>ssh-keygen -t rsa -b 4096 -C "最好为github的账号"</code></p>
 <p>后面一路直接回车</p>
 <p>接着就在（用户/.ssh）目录下生成了两个文件</p>
 <ul>
@@ -900,8 +899,7 @@
 <p>最终点击<code>Add SSH Key</code>按钮 就能成功添加啦</p>
 <h3 id="_2">测试使用<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <p>接着使用命令：</p>
-<div class="highlight"><pre><span></span><code>ssh -T git@github.com
-</code></pre></div>
+<p><code>ssh -T git@github.com</code></p>
 <p>检验是否配置成功</p>
 <blockquote>
 <p>注意：第一次连接，会有提示是否信任github服务器，我们需要输入yes</p>
